@@ -1,0 +1,18 @@
+// get started button
+
+@mixin starter_button($color){
+    text-decoration: none;
+        font-weight: 600;
+        color: $neutral-red;
+        background-color: $primary-red;
+        font-size: 15px;
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        transition: all .2s linear;
+        cursor: pointer;
+        margin: 0;
+
+        &:hover{
+            opacity: .7;
+        }
+}

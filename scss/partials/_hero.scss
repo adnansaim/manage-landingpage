@@ -1,0 +1,40 @@
+main{
+    max-width: 80%;
+    margin: 8rem auto;
+    overflow: hidden;
+    min-height: fit-content;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2 !important;
+
+    &_text{
+        flex: 1;
+        &-heading{
+            font-size: 4rem;
+            color: $primary-blue;
+            font-weight: 600;
+
+        }
+        &-para{
+            width: 50%;
+            font-size: 18px;
+            line-height: 2rem;
+            margin: 2.5rem 0 ;
+            color: $neutral-gray;
+        }
+        &-button{
+            @include starter_button($primary-red);
+        }
+    }
+    &-img{
+        flex: 1;
+        img{
+            z-index: 2;
+            margin: auto;
+            width: 100%;
+        }
+    }
+}
